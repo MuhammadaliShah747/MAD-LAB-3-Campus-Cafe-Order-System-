@@ -101,17 +101,15 @@ void step4() {
 void step5() {
   print('--- Step 5 ---');
   //5.3
-
-  print('--- Step 5 ---');
-
-  // Call mainOrder() as required by Task 5.3
+ 
+  
   var line = mainOrder();
 
   // Print the first two required lines
   print('Step 5: ${line.item.name} x${line.qty}');
   print('Step 5: total=${line.total} tax=${line.tax}');
 
-  // Assertion test block
+  
   try {
     OrderLine(line.item, 0);
     print('Step 5: assert did NOT fire');
